@@ -5,7 +5,7 @@
 # Penggunaan: sudo bash slims_security_scan.sh /path/ke/slims
 # ============================================================
 
-TARGET_DIR="${1:-/var/www/html}"
+TARGET_DIR="${1:-$(pwd)}"
 REPORT_FILE="security_report_$(date +%Y%m%d_%H%M%S).txt"
 RED='\033[0;31m'
 YLW='\033[1;33m'
